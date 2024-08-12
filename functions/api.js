@@ -5,7 +5,7 @@ const app = express();
 const router = express.Router();
 app.use(cors())
 
-router.get('/', cors(), (req, res) => {
+router.get('/', (req, res) => {
     res.json(
         [
             {
